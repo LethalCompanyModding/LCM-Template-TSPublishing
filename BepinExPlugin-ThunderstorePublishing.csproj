@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <!--
+      This will be what your DLL is named
+      Example: MyCoolMod.dll
+    -->
+    <AssemblyName>LethalCompanyModdingTemplate</AssemblyName>
+    <Description>A template for Lethal Company Modding!</Description>
+
+    <!-- 
+      You should keep this in sync with whatever your latest tag is
+      The version field in the TOML file will always use the tag name
+      so its okay to ignore that one but this one will show up when
+      the mod is loaded by BepinEx so keep it sync'd
+    -->
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>LethalCompanyModding.Template</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- 
+      The artifact upload to thunderstore script uses this layout so if you
+      change this make sure you also change the [[build.copy]] entry in
+      Thunderstore.toml to point to the new output
+    -->
+    <OutputPath>./bin/LCM</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <!--
+    this marks all references as not copied, so they won't be copied to the
+    output folder and clutter up your build env. Great for local builds, tho
+    not required for the github action
+  -->
+  <Target Name="ClearReferenceCopyLocalPaths" AfterTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Remove="@(ReferenceCopyLocalPaths)" />
+    </ItemGroup>
+  </Target>
+
+  <!--
+    Don't mess with anything below this line, it is required to build via 
+    github actions. If you are referencing other DLLs in your project than the
+    base game or unity DLLs they will need to be available via NUGET or copied
+    directly into your repo (which is pretty bad form) to build properly
+  -->
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="LethalCompany.GameLibs.Steam" Version="56.0.1-ngd.0" />
+    <PackageReference Include="UnityEngine.Modules" Version="2023.2.4" IncludeAssets="compile" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2"
+      PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
