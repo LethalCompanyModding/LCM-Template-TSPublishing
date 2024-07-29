@@ -2,21 +2,12 @@
 [config]
 schemaVersion = "0.0.1"
 
-
 [package]
-#This is your username on the Thunderstore
-namespace = "YOUR NAMESPACE HERE"
-#This is the name your mod will have on the Thunderstore
-name = "MOD NAME HERE"
-#This does not matter at all, this value is fed in by the tag name of the
-#upload to thunderstore action. Make sure to keep your CSPROJ file's version
-#in sync with your tag version!
-versionNumber = "1.0.0"
-#This is the short description shown on the Thunderstore, 250 characters or
-#less, please!
-description = "MOD DESCRIPTION HERE"
-#Replace this with a link to the github repo hosting this template
-websiteUrl = "https://github.com/LethalCompanyModding/BepinExPlugin-ThunderstorePublishing"
+
+#Edit this in the CSPROJ instead, the workflow will automate copying
+#it here for you
+description = "__PROJ_DESC__"
+
 #Change this to true if your mod has any NSFW content. Please follow the rules
 #on image and text content on your listing or your package may be removed
 containsNsfwContent = false
@@ -33,20 +24,6 @@ BepInEx-BepInExPack = "5.4.2100"
 icon = "./icon.png"
 readme = "../README.md"
 outdir = "./build"
-
-#This is the main DLL for your mod. Change this to the same filename as your
-#<AssemblyName> field in the CSPROJ or your zip file will be empty when uploaded
-[[build.copy]]
-source = "../bin/LCM/MOD NAME HERE.dll"
-target = "/plugins/MOD NAME HERE/"
-
-#This will copy your project's LICENSE file into your mod zip so that users
-#and more importantly, Robyn will know what your project is licensed under.
-#Do not just delete the license or this step will fail. Pick an appropriate
-#license and use it!
-[[build.copy]]
-source = "../LICENSE"
-target = "/"
 
 #Don't change this
 [general]

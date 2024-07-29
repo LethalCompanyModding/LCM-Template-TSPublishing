@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "RobynLlama",
+  "classifications": [
+    "Common",
+    "Code"
+  ],
+  "identity": "dev.mamallama.templates.lcm.tspublishing",
+  "name": "Lethal Company Modding Template + Thunderstore Publishing",
+  "shortName": "LCM_TS_Publishing",
+  "sourceName": "LCMPublishingTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "symbols": {
+    "ProjectGUID": {
+      "type": "parameter",
+      "description": "The GUID of your project used by BepinEx for dependencies",
+      "datatype": "text",
+      "replaces": "__PROJECT_GUID__",
+      "defaultValue": "com.github.me.projectname"
+    },
+    "ProjectAuthor": {
+      "type": "parameter",
+      "description": "The author of this project. Copy this from your Thunderstore team name for publishing",
+      "datatype": "text",
+      "replaces": "__PROJECT_AUTHOR__",
+      "defaultValue": "MyAuthorName"
+    },
+    "ProjectDESC": {
+      "type": "parameter",
+      "description": "A short description of your mod, 250 characters max",
+      "datatype": "text",
+      "replaces": "__PROJECT_DESC__",
+      "defaultValue": "This is a mod description, 250 characters max!"
+    },
+    "ProjectURL": {
+      "type": "parameter",
+      "description": "A link to your github repository for this mod",
+      "datatype": "text",
+      "replaces": "__PROJECT_URL__",
+      "defaultValue": "https://github.com/LethalCompanyModding/LCM-Template-TSPublishing"
+    }
+  }
+}

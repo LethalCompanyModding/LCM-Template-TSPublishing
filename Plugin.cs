@@ -1,8 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 
-namespace LethalCompanyModding.Template;
-
 /*
     Here are some basic resources on code style and naming conventions to help
     you in your first CSharp plugin!
@@ -12,7 +10,7 @@ namespace LethalCompanyModding.Template;
     https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/names-of-namespaces
 */
 
-[BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+[BepInPlugin(LCMPluginInfo.PLUGIN_GUID, LCMPluginInfo.PLUGIN_NAME, LCMPluginInfo.PLUGIN_VERSION)]
 public class Plugin : BaseUnityPlugin
 {
     public static ManualLogSource Log;
@@ -29,7 +27,7 @@ public class Plugin : BaseUnityPlugin
         Log = Logger;
 
         // Log our awake here so we can see it in LogOutput.txt file
-        Log.LogInfo($"Plugin {MyPluginInfo.PLUGIN_NAME} is loaded!");
+        Log.LogInfo($"Plugin {LCMPluginInfo.PLUGIN_NAME} is loaded!");
     }
 
 }

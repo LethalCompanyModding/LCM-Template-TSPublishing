@@ -1,39 +1,34 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-
-    <TargetFramework>netstandard2.1</TargetFramework>
-
-    <!--
-      This will be your BepinEx GUID, use Reverse FQDN format here on a
-      domain you have.
-      See: https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html
-      for more information
-    -->
-    <AssemblyName>LethalCompanyModdingTemplate</AssemblyName>
-    <Description>A template for Lethal Company Modding!</Description>
-
     <!-- 
-      You should keep this in sync with whatever your latest tag is
-      The version field in the TOML file will always use the tag name
-      so its okay to ignore that one but this one will show up when
-      the mod is loaded by BepinEx so keep it sync'd
+      These were automatically generated for you by the LCMPublishingTemplate.
+      You should probably not edit them by hand if you've already published
+      to the Thunderstore
+    -->
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>__PROJECT_GUID__</AssemblyName>
+    <Description>__PROJECT_DESC__</Description>
+    <Product>LCMPublishingTemplate</Product>
+    <Authors>__PROJECT_AUTHOR__</Authors>
+    <!--
+      Except this, you should keep this up to date with your publishing tags
     -->
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
-    <RootNamespace>LethalCompanyModding.Template</RootNamespace>
+    <RootNamespace>LCMPublishingTemplate</RootNamespace>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup>
-    <!-- 
-      The artifact upload to thunderstore script uses this layout so if you
-      change this make sure you also change the [[build.copy]] entry in
-      Thunderstore.toml to point to the new output
-    -->
-    <OutputPath>./bin/LCM</OutputPath>
+    <OutputPath>./tspublish/dist/plugins</OutputPath>
+    <TargetName>LCMPublishingTemplate</TargetName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
+
+  <Import Project="InfoProps.targets" />
 
   <!--
     this marks all references as not copied, so they won't be copied to the
@@ -50,13 +45,16 @@
     Don't mess with anything below this line, it is required to build via 
     github actions. If you are referencing other DLLs in your project than the
     base game or unity DLLs they will need to be available via NUGET or copied
-    directly into your repo (which is pretty bad form) to build properly
+    directly into your repo (which is pretty bad form) to build properly unless
+    they already exist on github in which case you can use submodules to track
+    the reference instead.
   -->
 
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.*" />
-    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <!--<PackageReference
+    Include="BepInEx.PluginInfoProps" Version="2.*" />-->
     <PackageReference Include="LethalCompany.GameLibs.Steam" Version="56.0.1-ngd.0" />
     <PackageReference Include="UnityEngine.Modules" Version="2023.2.4" IncludeAssets="compile" />
   </ItemGroup>
