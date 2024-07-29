@@ -15,7 +15,6 @@
       Except this, you should keep this up to date with your publishing tags
     -->
     <Version>1.0.0</Version>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RootNamespace>LCMPublishingTemplate</RootNamespace>
     <RepositoryType>git</RepositoryType>
