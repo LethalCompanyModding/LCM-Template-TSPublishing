@@ -52,7 +52,7 @@
 
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.Core" Version="5.4.*" />
     <PackageReference Include="LethalCompany.GameLibs.Steam" Version="56.0.1-ngd.0" />
     <PackageReference Include="UnityEngine.Modules" Version="2023.2.4" IncludeAssets="compile" />
   </ItemGroup>
