@@ -33,17 +33,6 @@
   <Import Project="InfoProps.targets" />
 
   <!--
-    this marks all references as not copied, so they won't be copied to the
-    output folder and clutter up your build env. Great for local builds, tho
-    not required for the github action
-  -->
-  <Target Name="ClearReferenceCopyLocalPaths" AfterTargets="ResolveAssemblyReferences">
-    <ItemGroup>
-      <ReferenceCopyLocalPaths Remove="@(ReferenceCopyLocalPaths)" />
-    </ItemGroup>
-  </Target>
-
-  <!--
     Don't mess with anything below this line, it is required to build via 
     github actions. If you are referencing other DLLs in your project than the
     base game or unity DLLs they will need to be available via NUGET or copied
@@ -57,6 +46,22 @@
     <PackageReference Include="BepInEx.Core" Version="5.4.*" />
     <PackageReference Include="LethalCompany.GameLibs.Steam" Version="56.0.1-ngd.0" />
     <PackageReference Include="UnityEngine.Modules" Version="2023.2.4" IncludeAssets="compile" />
+
+    <!--
+      When adding additional references, ensure you use <Private>false</Private> to
+      ensure the DLL is explicitly NOT copied to the output directory. This is because
+      the DLLs are already included in the game and will be loaded from there.
+
+      Further, if the DLL is not included as part of the game, you should be using a
+      Dependency in your thunderstore.toml file to ensure the DLL is available to the
+      game when your mod is loaded.
+
+      Example:
+      <Reference Include="Assembly-cSharp">
+        <HintPath>(.....)\Assembly-CSharp.dll</HintPath>
+        <Private>false</Private>
+      </Reference>
+    -->
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
