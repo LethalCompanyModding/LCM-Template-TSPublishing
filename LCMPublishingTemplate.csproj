@@ -27,6 +27,7 @@
   <PropertyGroup>
     <OutputPath>./tspublish/dist/plugins</OutputPath>
     <TargetName>LCMPublishingTemplate</TargetName>
+    <ProjectDepsFileName>$(TargetName).deps.json</ProjectDepsFileName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
