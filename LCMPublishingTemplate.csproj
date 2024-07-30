@@ -22,10 +22,10 @@
     <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <PublishProfile>Thunderstore</PublishProfile>
   </PropertyGroup>
 
   <PropertyGroup>
-    <OutputPath>./tspublish/dist/plugins</OutputPath>
     <TargetName>LCMPublishingTemplate</TargetName>
     <ProjectDepsFileName>$(TargetName).deps.json</ProjectDepsFileName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
