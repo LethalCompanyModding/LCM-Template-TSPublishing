@@ -13,7 +13,19 @@
     "language": "C#",
     "type": "item"
   },
+  "guids": [
+    "1514480A-2DCB-4E4D-A8E4-0BD4D1F00A25",
+    "AB5F80E1-8E02-466C-93E3-61670519ABE8"
+  ],
   "symbols": {
+    "1514480A-2DCB-4E4D-A8E4-0BD4D1F00A25": {
+      "type": "generated",
+      "generator": "guid"
+    },
+    "AB5F80E1-8E02-466C-93E3-61670519ABE8": {
+      "type": "generated",
+      "generator": "guid"
+    },
     "ProjectGUID": {
       "type": "parameter",
       "description": "The GUID of your project used by BepinEx for dependencies",
