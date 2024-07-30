@@ -28,6 +28,7 @@
     },
     "ProjectGUID": {
       "type": "parameter",
+      "isRequired": true,
       "description": "The GUID of your project used by BepinEx for dependencies",
       "datatype": "text",
       "replaces": "__PROJECT_GUID__",
@@ -35,6 +36,7 @@
     },
     "ProjectAuthor": {
       "type": "parameter",
+      "isRequired": true,
       "description": "The author of this project. Copy this from your Thunderstore team name for publishing",
       "datatype": "text",
       "replaces": "__PROJECT_AUTHOR__",
@@ -42,6 +44,7 @@
     },
     "ProjectDESC": {
       "type": "parameter",
+      "isRequired": true,
       "description": "A short description of your mod, 250 characters max",
       "datatype": "text",
       "replaces": "__PROJECT_DESC__",
@@ -49,6 +52,7 @@
     },
     "ProjectURL": {
       "type": "parameter",
+      "isRequired": true,
       "description": "A link to your github repository for this mod",
       "datatype": "text",
       "replaces": "__PROJECT_URL__",
