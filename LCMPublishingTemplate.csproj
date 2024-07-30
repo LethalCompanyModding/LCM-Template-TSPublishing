@@ -17,7 +17,7 @@
     <Version>1.0.0</Version>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
-    <RootNamespace>LCMPublishingTemplate</RootNamespace>
+    <RootNamespace>$(Product)</RootNamespace>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
@@ -26,8 +26,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetName>LCMPublishingTemplate</TargetName>
-    <ProjectDepsFileName>$(TargetName).deps.json</ProjectDepsFileName>
+    <TargetName>$(Product)</TargetName>
+    <ProjectDepsFileName>$(Product).deps.json</ProjectDepsFileName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
