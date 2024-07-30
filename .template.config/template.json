@@ -54,5 +54,12 @@
       "replaces": "__PROJECT_URL__",
       "defaultValue": "https://github.com/LethalCompanyModding/LCM-Template-TSPublishing"
     }
-  }
+  },
+  "sources": [
+    {
+      "copyOnly": [
+        ".git/**"
+      ]
+    }
+  ]
 }
