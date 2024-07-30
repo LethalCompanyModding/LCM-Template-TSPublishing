@@ -23,9 +23,6 @@
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <PublishProfile>Thunderstore</PublishProfile>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <TargetName>$(Product)</TargetName>
     <ProjectDepsFileName>$(Product).deps.json</ProjectDepsFileName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
