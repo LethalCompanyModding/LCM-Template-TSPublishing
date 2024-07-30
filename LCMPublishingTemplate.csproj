@@ -20,6 +20,8 @@
     <RootNamespace>LCMPublishingTemplate</RootNamespace>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <PropertyGroup>
