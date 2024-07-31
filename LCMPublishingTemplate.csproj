@@ -68,11 +68,7 @@
       Dependency in your thunderstore.toml file to ensure the DLL is available to the
       game when your mod is loaded.
 
-      Example:
-      <Reference Include="Assembly-cSharp">
-        <HintPath>(.....)\Assembly-CSharp.dll</HintPath>
-        <Private>false</Private>
-      </Reference>
+      Example: <Reference Include="Assembly-CSharp.dll" Private="false" />
     -->
   </ItemGroup>
 
