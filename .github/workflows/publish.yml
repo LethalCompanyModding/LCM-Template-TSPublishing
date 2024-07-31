@@ -27,5 +27,6 @@ jobs:
       - name: Publish to TS
         env:
           TCLI_AUTH_TOKEN: ${{ secrets.TCLI_AUTH_TOKEN }}
+          PACKAGE_VERSION: ${{ github.ref_name }}
         run: |
-          cd tspublish && dotnet tcli publish --package-version ${{ github.ref_name }}
+          dotnet publish -c Release
