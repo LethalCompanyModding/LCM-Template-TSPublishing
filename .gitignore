@@ -51,7 +51,6 @@ BenchmarkDotNet.Artifacts/
 # .NET Core
 project.lock.json
 project.fragment.lock.json
-artifacts/
 
 # Files built by Visual Studio
 *_i.c
@@ -221,4 +220,4 @@ node_modules/
 *.sln.iml
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
-tspublish/dist/**/*
+artifacts/*/dist/**/*
