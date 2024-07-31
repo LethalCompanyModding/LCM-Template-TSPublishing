@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCMPublishingTemplate", "LCMPublishingTemplate.csproj", "{AB5F80E1-8E02-466C-93E3-61670519ABE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCMPublishingTemplate", "src/LCMPublishingTemplate/LCMPublishingTemplate.csproj", "{AB5F80E1-8E02-466C-93E3-61670519ABE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

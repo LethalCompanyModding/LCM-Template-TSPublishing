@@ -28,7 +28,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
-  <Import Project="InfoProps.targets" />
+  <Import Project="$(SolutionDir)\build\InfoProps.targets" />
 
   <!--
     Don't mess with anything below this line, it is required to build via 
