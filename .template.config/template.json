@@ -28,6 +28,7 @@
     },
     "ProjectGUID": {
       "datatype": "string",
+      "defaultIfOptionWithoutValue": true,
       "defaultValue": "com.github.me.projectname",
       "description": "The GUID of your project used by BepinEx for dependencies",
       "isRequired": true,
@@ -36,6 +37,7 @@
     },
     "ProjectAuthor": {
       "datatype": "string",
+      "defaultIfOptionWithoutValue": true,
       "defaultValue": "MyAuthorName",
       "description": "The author of this project. Copy this from your Thunderstore team name for publishing",
       "isRequired": true,
@@ -44,6 +46,7 @@
     },
     "ProjectDESC": {
       "datatype": "string",
+      "defaultIfOptionWithoutValue": true,
       "defaultValue": "This is a mod description, 250 characters max!",
       "description": "A short description of your mod, 250 characters max",
       "isRequired": true,
@@ -52,6 +55,7 @@
     },
     "ProjectURL": {
       "datatype": "string",
+      "defaultIfOptionWithoutValue": true,
       "defaultValue": "https://github.com/LethalCompanyModding/LCM-Template-TSPublishing",
       "description": "A link to your github repository for this mod",
       "isRequired": true,
