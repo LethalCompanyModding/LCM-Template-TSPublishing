@@ -35,7 +35,7 @@
       "replaces": "__PROJECT_GUID__",
       "type": "parameter"
     },
-    "ProjectAuthor": {
+    "ProjectAUTHOR": {
       "datatype": "string",
       "defaultIfOptionWithoutValue": true,
       "defaultValue": "MyAuthorName",
