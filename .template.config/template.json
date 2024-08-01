@@ -26,15 +26,6 @@
       "type": "generated",
       "generator": "guid"
     },
-    "ProjectGUID": {
-      "datatype": "string",
-      "defaultIfOptionWithoutValue": true,
-      "defaultValue": "com.github.me.projectname",
-      "description": "The GUID of your project used by BepinEx for dependencies",
-      "isRequired": true,
-      "replaces": "__PROJECT_GUID__",
-      "type": "parameter"
-    },
     "ProjectAUTHOR": {
       "datatype": "string",
       "defaultIfOptionWithoutValue": true,
@@ -51,6 +42,15 @@
       "description": "A short description of your mod, 250 characters max",
       "isRequired": true,
       "replaces": "__PROJECT_DESC__",
+      "type": "parameter"
+    },
+    "ProjectGUID": {
+      "datatype": "string",
+      "defaultIfOptionWithoutValue": true,
+      "defaultValue": "com.github.me.projectname",
+      "description": "The GUID of your project used by BepinEx for dependencies",
+      "isRequired": true,
+      "replaces": "__PROJECT_GUID__",
       "type": "parameter"
     },
     "ProjectURL": {
