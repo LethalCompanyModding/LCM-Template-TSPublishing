@@ -31,6 +31,13 @@
       "defaultIfOptionWithoutValue": true,
       "defaultValue": "MyAuthorName",
       "description": "The author of this project. Copy this from your Thunderstore team name for publishing",
+      "forms": {
+        "onlyWordCharacters": {
+          "identifier": "replace",
+          "pattern": "[^\\w]",
+          "replacement": ""
+        }
+      },
       "isRequired": true,
       "replaces": "__PROJECT_AUTHOR__",
       "type": "parameter"
@@ -40,6 +47,13 @@
       "defaultIfOptionWithoutValue": true,
       "defaultValue": "This is a mod description, 250 characters max!",
       "description": "A short description of your mod, 250 characters max",
+      "forms": {
+        "onlyASCII": {
+          "identifier": "replace",
+          "pattern": "[^\\x00-\\x7F]",
+          "replacement": ""
+        }
+      },
       "isRequired": true,
       "replaces": "__PROJECT_DESC__",
       "type": "parameter"
@@ -49,6 +63,13 @@
       "defaultIfOptionWithoutValue": true,
       "defaultValue": "com.github.me.projectname",
       "description": "The GUID of your project used by BepinEx for dependencies",
+      "forms": {
+        "wordCharactersAndDots": {
+          "identifier": "replace",
+          "pattern": "[^\\w\\.]",
+          "replacement": ""
+        }
+      },
       "isRequired": true,
       "replaces": "__PROJECT_GUID__",
       "type": "parameter"
@@ -58,6 +79,13 @@
       "defaultIfOptionWithoutValue": true,
       "defaultValue": "https://github.com/LethalCompanyModding/LCM-Template-TSPublishing",
       "description": "A link to your github repository for this mod",
+      "forms": {
+        "safeURLCharacters": {
+          "identifier": "replace",
+          "pattern": "[^\\w\\.:/\\-+!*'\\(\\)?%=&]",
+          "replacement": ""
+        }
+      },
       "isRequired": true,
       "replaces": "__PROJECT_URL__",
       "type": "parameter"
