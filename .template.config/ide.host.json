@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "icon": "icon.png",
+  "symbolInfo": [
+    {
+      "id": "ProjectAUTHOR",
+      "isVisible": true,
+      "description": {
+        "text": "The author of this project. Copy this from your Thunderstore team name for publishing"
+      },
+      "name": {
+        "text": "Project Author (Thunderstore Namespace)"
+      }
+    },
+    {
+      "id": "ProjectDESC",
+      "isVisible": true,
+      "description": {
+        "text": "A short description of your mod, 250 characters max"
+      },
+      "name": {
+        "text": "Project Description (Thunderstore Summary)"
+      }
+    },
+    {
+      "id": "ProjectGUID",
+      "isVisible": true,
+      "description": {
+        "text": "The GUID of your project used by BepinEx for dependencies"
+      },
+      "name": {
+        "text": "Project GUID (BepInEx Plugin GUID)"
+      }
+    },
+    {
+      "id": "ProjectURL",
+      "isVisible": true,
+      "description": {
+        "text": "A link to your github repository for this mod"
+      },
+      "name": {
+        "text": "Project URL (GitHub Repository URL)"
+      }
+    }
+  ]
+}
