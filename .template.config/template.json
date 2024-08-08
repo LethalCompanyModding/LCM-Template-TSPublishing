@@ -6,14 +6,6 @@
     "Code"
   ],
   "defaultName": "My_LethalCompany_Mod",
-  "identity": "dev.mamallama.templates.lcm.tspublishing",
-  "name": "Lethal Company Modding Template + Thunderstore Publishing",
-  "shortName": "LCM_TS_Publishing",
-  "sourceName": "LCMPublishingTemplate",
-  "tags": {
-    "language": "C#",
-    "type": "solution"
-  },
   "forms": {
     "onlyPrintableCharacters": {
       "identifier": "replace",
@@ -39,6 +31,17 @@
   "guids": [
     "1514480A-2DCB-4E4D-A8E4-0BD4D1F00A25",
     "AB5F80E1-8E02-466C-93E3-61670519ABE8"
+  ],
+  "identity": "dev.mamallama.templates.lcm.tspublishing",
+  "name": "Lethal Company Modding Template + Thunderstore Publishing",
+  "shortName": "LCM_TS_Publishing",
+  "sourceName": "LCMPublishingTemplate",
+  "sources": [
+    {
+      "copyOnly": [
+        ".git/**"
+      ]
+    }
   ],
   "symbols": {
     "1514480A-2DCB-4E4D-A8E4-0BD4D1F00A25": {
@@ -106,11 +109,8 @@
       "type": "parameter"
     }
   },
-  "sources": [
-    {
-      "copyOnly": [
-        ".git/**"
-      ]
-    }
-  ]
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
 }
