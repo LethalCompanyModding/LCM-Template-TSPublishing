@@ -14,6 +14,28 @@
     "language": "C#",
     "type": "solution"
   },
+  "forms": {
+    "onlyPrintableCharacters": {
+      "identifier": "replace",
+      "pattern": "[^\\x00-\\x7F]",
+      "replacement": ""
+    },
+    "onlyURLCharacters": {
+      "identifier": "replace",
+      "pattern": "[^\\w\\.:/\\-+!*'\\(\\)?%=&]",
+      "replacement": ""
+    },
+    "onlyWordCharacters": {
+      "identifier": "replace",
+      "pattern": "[^\\w]",
+      "replacement": ""
+    },
+    "onlyWordCharactersAndDot": {
+      "identifier": "replace",
+      "pattern": "[^\\w\\.]",
+      "replacement": ""
+    }
+  },
   "guids": [
     "1514480A-2DCB-4E4D-A8E4-0BD4D1F00A25",
     "AB5F80E1-8E02-466C-93E3-61670519ABE8"
@@ -33,11 +55,9 @@
       "defaultValue": "MyAuthorName",
       "description": "The author of this project. Copy this from your Thunderstore team name for publishing",
       "forms": {
-        "onlyWordCharacters": {
-          "identifier": "replace",
-          "pattern": "[^\\w]",
-          "replacement": ""
-        }
+        "global": [
+          "onlyWordCharacters"
+        ]
       },
       "isRequired": true,
       "replaces": "__PROJECT_AUTHOR__",
@@ -49,11 +69,9 @@
       "defaultValue": "This is a mod description, 250 characters max!",
       "description": "A short description of your mod, 250 characters max",
       "forms": {
-        "onlyASCII": {
-          "identifier": "replace",
-          "pattern": "[^\\x00-\\x7F]",
-          "replacement": ""
-        }
+        "global": [
+          "onlyPrintableCharacters"
+        ]
       },
       "isRequired": true,
       "replaces": "__PROJECT_DESC__",
@@ -65,11 +83,9 @@
       "defaultValue": "com.github.me.projectname",
       "description": "The GUID of your project used by BepinEx for dependencies",
       "forms": {
-        "wordCharactersAndDots": {
-          "identifier": "replace",
-          "pattern": "[^\\w\\.]",
-          "replacement": ""
-        }
+        "global": [
+          "onlyWordCharactersAndDot"
+        ]
       },
       "isRequired": true,
       "replaces": "__PROJECT_GUID__",
@@ -81,11 +97,9 @@
       "defaultValue": "https://github.com/LethalCompanyModding/LCM-Template-TSPublishing",
       "description": "A link to your github repository for this mod",
       "forms": {
-        "safeURLCharacters": {
-          "identifier": "replace",
-          "pattern": "[^\\w\\.:/\\-+!*'\\(\\)?%=&]",
-          "replacement": ""
-        }
+        "global": [
+          "onlyURLCharacters"
+        ]
       },
       "isRequired": true,
       "replaces": "__PROJECT_URL__",
