@@ -5,6 +5,7 @@
     "Common",
     "Code"
   ],
+  "defaultName": "My_LethalCompany_Mod",
   "identity": "dev.mamallama.templates.lcm.tspublishing",
   "name": "Lethal Company Modding Template + Thunderstore Publishing",
   "shortName": "LCM_TS_Publishing",
