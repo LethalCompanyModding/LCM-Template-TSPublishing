@@ -57,11 +57,6 @@
       Include="LethalCompany.GameLibs.Steam"
       Version="56.0.1-ngd.0"
     />
-    <PackageReference
-      Include="UnityEngine.Modules"
-      IncludeAssets="compile"
-      Version="2023.2.4"
-    />
 
     <!--
       When adding additional references, ensure you use <Private>false</Private> to

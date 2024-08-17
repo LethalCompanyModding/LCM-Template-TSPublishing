@@ -28,12 +28,6 @@
           "UnityEngine.Modules": "2022.3.9"
         }
       },
-      "UnityEngine.Modules": {
-        "type": "Direct",
-        "requested": "[2023.2.4, )",
-        "resolved": "2023.2.4",
-        "contentHash": "J0UbKuh0ACVBNq/gCJEIqDoiZJe58er9nSGPRElzk9hJBS23xif6xnisayD4m3heCKqsZQFInnQcbrRgzWp4dw=="
-      },
       "BepInEx.BaseLib": {
         "type": "Transitive",
         "resolved": "5.4.20",
@@ -374,6 +368,11 @@
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
+      },
+      "UnityEngine.Modules": {
+        "type": "Transitive",
+        "resolved": "2022.3.9",
+        "contentHash": "sSxqZjd05U0NWlX+eappdlsEuXFvDRHkUaClDVTocGRzCmIwNvgGJIPh22lGklIpNZ3cJZneYJkIUnEIazR8VA=="
       }
     }
   }
