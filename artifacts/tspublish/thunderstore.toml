@@ -22,7 +22,19 @@
 [build]
   icon  ="./icon.png"
   outdir="./build"
-  readme="../README.md"
+  readme="../../README.md"
+
+  [[build.copy]]
+    source="../../LICENSE"
+    target="./"
+
+  [[build.copy]]
+    source="../../CHANGELOG.md"
+    target="./"
+
+  [[build.copy]]
+    source="./dist"
+    target="./"
 
 #Don't change this
 [general]
