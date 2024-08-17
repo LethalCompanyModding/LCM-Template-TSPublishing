@@ -22,8 +22,6 @@
     <!-- 
       You shouldn't have to change these, but you could if you wanted to.
     -->
-    <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
     <ProjectDepsFileName>$(Product).deps.json</ProjectDepsFileName>
     <RootNamespace>$(Product)</RootNamespace>
     <TargetName>$(Product)</TargetName>
@@ -37,14 +35,6 @@
     they already exist on github in which case you can use submodules to track
     the reference instead.
   -->
-
-  <PropertyGroup>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-    <PublishProfile>Thunderstore</PublishProfile>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference
@@ -73,15 +63,5 @@
       Example: <Reference Include="Assembly-CSharp.dll" Private="false" />
     -->
   </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
-    <PackageReference
-      Include="Microsoft.NETFramework.ReferenceAssemblies"
-      PrivateAssets="all"
-      Version="1.0.2"
-    />
-  </ItemGroup>
-
-  <Import Project="$(SolutionDir)\build\InfoProps.targets" />
 
 </Project>
