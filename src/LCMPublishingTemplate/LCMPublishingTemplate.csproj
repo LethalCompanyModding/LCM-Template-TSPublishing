@@ -39,22 +39,26 @@
     the reference instead.
   -->
 
+  <PropertyGroup>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference 
-      Include="BepInEx.Analyzers" 
+    <PackageReference
+      Include="BepInEx.Analyzers"
       PrivateAssets="all"
-      Version="1.*" 
+      Version="1.*"
     />
-    <PackageReference 
-      Include="BepInEx.Core" 
+    <PackageReference
+      Include="BepInEx.Core"
       Version="5.4.*"
     />
-    <PackageReference 
-      Include="LethalCompany.GameLibs.Steam" 
+    <PackageReference
+      Include="LethalCompany.GameLibs.Steam"
       Version="56.0.1-ngd.0"
     />
-    <PackageReference 
-      Include="UnityEngine.Modules" 
+    <PackageReference
+      Include="UnityEngine.Modules"
       IncludeAssets="compile"
       Version="2023.2.4"
     />
