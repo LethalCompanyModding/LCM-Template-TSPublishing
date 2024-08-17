@@ -1,34 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
     <!-- 
       These were automatically generated for you by the LCMPublishingTemplate.
       You should probably not edit them by hand if you've already published
-      to the Thunderstore
+      to the Thunderstore.
     -->
-    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>__PROJECT_GUID__</AssemblyName>
+    <Authors>__PROJECT_AUTHOR__</Authors>
     <Description>__PROJECT_DESC__</Description>
     <Product>LCMPublishingTemplate</Product>
-    <Authors>__PROJECT_AUTHOR__</Authors>
-    <!--
-      Except this, you should keep this up to date with your publishing tags
-    -->
-    <Version>1.0.0</Version>
-    <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
-    <RootNamespace>$(Product)</RootNamespace>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
-    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <PublishProfile>Thunderstore</PublishProfile>
-    <TargetName>$(Product)</TargetName>
-    <ProjectDepsFileName>$(Product).deps.json</ProjectDepsFileName>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-  </PropertyGroup>
+    <!--
+      Except this, you should keep this up to date with your publishing tags.
+    -->
+    <Version>1.0.0</Version>
 
-  <Import Project="$(SolutionDir)\build\InfoProps.targets" />
+    <!-- 
+      You shouldn't have to change these, but you could if you wanted to.
+    -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ProjectDepsFileName>$(Product).deps.json</ProjectDepsFileName>
+    <RootNamespace>$(Product)</RootNamespace>
+    <TargetName>$(Product)</TargetName>
+  </PropertyGroup>
 
   <!--
     Don't mess with anything below this line, it is required to build via 
@@ -40,6 +39,10 @@
   -->
 
   <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <PublishProfile>Thunderstore</PublishProfile>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
@@ -78,5 +81,7 @@
       Version="1.0.2"
     />
   </ItemGroup>
+
+  <Import Project="$(SolutionDir)\build\InfoProps.targets" />
 
 </Project>
