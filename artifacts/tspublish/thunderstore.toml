@@ -11,6 +11,10 @@
   #on image and text content on your listing or your package may be removed
   containsNsfwContent=false
 
+  #This is the link that shows up in the top right of the package page
+  #while it can be anything, I suggest keeping it as your github
+  websiteUrl="__PROJECT_URL__"
+
   #This is where you put in dependencies in the format
   #DependencyNamespace-ModName = "version.number.here"
   [package.dependencies]
