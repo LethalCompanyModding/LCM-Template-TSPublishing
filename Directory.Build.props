@@ -1,6 +1,11 @@
 <Project>
 
   <PropertyGroup>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>

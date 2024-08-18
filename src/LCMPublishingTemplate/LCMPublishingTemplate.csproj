@@ -12,8 +12,6 @@
     <Authors>__PROJECT_AUTHOR__</Authors>
     <Description>__PROJECT_DESC__</Description>
     <Product>LCMPublishingTemplate</Product>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
     <!--
       Except this, you should keep this up to date with your publishing tags.
     -->
