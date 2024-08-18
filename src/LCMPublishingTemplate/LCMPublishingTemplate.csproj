@@ -48,7 +48,7 @@
     />
     <PackageReference
       Include="LethalCompany.GameLibs.Steam"
-      Version="60.0.0-ngd.0"
+      Version="61.0.0-ngd.0"
     />
 
     <!--
