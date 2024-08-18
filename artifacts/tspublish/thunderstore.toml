@@ -26,7 +26,7 @@
 [build]
   icon  ="./icon.png"
   outdir="./build"
-  readme="./dist/README.md"
+  readme="./../../README.md"
 
   [[build.copy]]
     source="./dist"
