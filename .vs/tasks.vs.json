@@ -4,7 +4,7 @@
     {
       "taskName": "Dry-run package test",
       "type": "shell",
-      "command": "tcli build --config-path ./artifacts/tspublish/thunderstore.toml"
+      "command": "dotnet tool run tcli build --config-path ./artifacts/tspublish/thunderstore.toml"
     }
   ]
 }
