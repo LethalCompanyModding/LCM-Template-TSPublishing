@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build",
+      "label": "build LCM project",
       "command": "dotnet",
       "type": "shell",
       "args": [
@@ -19,6 +19,12 @@
         "reveal": "silent"
       },
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Dry-run package test",
+      "type": "shell",
+      "command": "dotnet tool run tcli build --config-path ./artifacts/tspublish/thunderstore.toml",
+      "problemMatcher": []
     }
   ]
 }

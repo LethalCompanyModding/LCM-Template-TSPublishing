@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
 
     <!-- 
-      These were automatically generated for you by the LCMPublishingTemplate.
+      These were automatically generated for you by the template.
       You should probably not edit them by hand if you've already published
       to the Thunderstore.
     -->
@@ -12,8 +12,6 @@
     <Authors>__PROJECT_AUTHOR__</Authors>
     <Description>__PROJECT_DESC__</Description>
     <Product>LCMPublishingTemplate</Product>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>__PROJECT_URL__</RepositoryUrl>
     <!--
       Except this, you should keep this up to date with your publishing tags.
     -->
@@ -48,7 +46,7 @@
     />
     <PackageReference
       Include="LethalCompany.GameLibs.Steam"
-      Version="60.0.0-ngd.0"
+      Version="62.0.0-ngd.0"
     />
 
     <!--
